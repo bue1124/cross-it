@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Cross It | 登录</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Cross It</h2>
+    <p class="subtitle">跨境线上奥特莱斯</p>
+
+    <input id="loginUser" placeholder="邮箱 / 用户名">
+    <input id="loginPwd" type="password" placeholder="密码">
+
+    <button onclick="login()">登录</button>
+
+    <p class="hint">
+      没有账户？
+      <span onclick="goRegister()">立即注册</span>
+    </p>
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

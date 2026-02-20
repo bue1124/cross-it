@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Cross It | 注册</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>创建 Cross It 账户</h2>
+
+    <input id="regUser" placeholder="邮箱 / 用户名">
+    <input id="regPwd" type="password" placeholder="设置密码">
+
+    <button onclick="register()">注册并登录</button>
+
+    <p class="hint">
+      已有账户？
+      <span onclick="goLogin()">返回登录</span>
+    </p>
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

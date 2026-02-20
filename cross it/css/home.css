@@ -1,0 +1,97 @@
+header{
+  background:#131921;
+  color:#fff;
+}
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:16px;
+  display:flex;
+  justify-content:space-between;
+}
+.menu span{
+  margin-left:20px;
+  cursor:pointer;
+}
+
+/* .carousel{
+  height:300px;
+  position:relative;
+  background:#222;
+  color:#fff;
+}
+.slide{
+  position:absolute;
+  inset:0;
+  display:none;
+  padding:60px;
+} */
+
+
+
+.carousel{
+  height:300px;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  display:none;
+  padding:60px;
+
+  /* 新增：背景图支持 */
+  background-size:cover;
+  background-position:center;
+}
+
+/* 文字可读性（非常重要） */
+.slide::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.15)
+  );
+}
+
+.slide h1,
+.slide p{
+  position:relative;
+  z-index:2;
+}
+
+.slide.active{
+  display:block;
+}
+
+/* 结束 */
+
+.slide.active{display:block}
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:16px;
+}
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  margin-bottom:20px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.item{
+  background:#f7f7f7;
+  padding:20px;
+  text-align:center;
+  border-radius:6px;
+}
+

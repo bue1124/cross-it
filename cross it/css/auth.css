@@ -1,0 +1,30 @@
+.auth-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.auth-card{
+  width:360px;
+  background:#fff;
+  padding:32px;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+.auth-card input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+.subtitle{
+  color:#666;
+  text-align:center;
+}
+.hint{
+  text-align:center;
+  font-size:13px;
+}
+.hint span{
+  color:#0073bb;
+  cursor:pointer;
+}

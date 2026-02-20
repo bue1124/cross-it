@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Cross It | 首页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <strong>Cross It</strong>
+    <div class="menu">
+      <span>首页</span>
+      <span>发现</span>
+      <span>商城</span>
+      <span>我的</span>
+    </div>
+  </div>
+</header>
+
+<div class="carousel">
+  <div class="slide active" style="background-image: url('images/banner-main.jpg');">
+    <h1>让每一件好商品，不输给时间</h1>
+    <p>跨境库存 × 品牌折扣 × ESG 环保</p>
+  </div>
+  <div class="slide" style="background-image: url('images/banner-flash.jpg');">
+    <h1>24 小时闪清机制</h1>
+    <p>AI 驱动的跨境库存止损与再分发</p>
+  </div>
+  <div class="slide" style="background-image: url('images/bannerone.jpg');">
+    <h1>ESG 环境保护计划</h1>
+    <p>减少库存浪费 · 推动循环经济</p>
+  </div>
+</div>
+
+<section class="container">
+  <div class="card">
+    <h3>核心业务</h3>
+    <div class="grid">
+      <div class="item" onclick="go('box.html')">品牌过季盲盒</div>
+      <div class="item" onclick="go('flash.html')">24 小时闪清</div>
+      <div class="item" onclick="go('outlet.html')">奥莱直购</div>
+      <div class="item" onclick="go('live.html')">达人 / 直播</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🌱 ESG 成果</h3>
+    <p>累计减少库存浪费 <strong>12,480</strong> 件</p>
+    <p>再生处理 <strong>2,160</strong> 件商品</p>
+  </div>
+</section>
+
+<script src="js/home.js"></script>
+
+<script>
+function go(page){
+  window.location.href = page;
+}
+</script>
+
+</body>
+</html>
